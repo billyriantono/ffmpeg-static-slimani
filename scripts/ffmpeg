@@ -59,6 +59,7 @@ do_configure()
     --enable-nonfree \
     --enable-demuxer=dash \
     --enable-libxml2 \
+    --enable-librtmp
   then
     error "Failed to configure $NAME"
   fi

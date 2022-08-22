@@ -51,7 +51,7 @@ do_compile()
 do_install()
 {
   info "Install $NAME [ ${C_RUN}${VERSION}${C_INFO} ] ..."
-  cd_src rtmpdump-${VERSION}
+  cd_src rtmpdump-master-*
   cd librtmp
   if ! make install_base; then
     error "Failed to install $NAME"

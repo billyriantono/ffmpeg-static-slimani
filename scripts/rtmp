@@ -1,5 +1,7 @@
 #!/bin/bash
-_FILE__=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/`basename "${BASH_SOURCE[0]}"`
+
+
+__FILE__=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/`basename "${BASH_SOURCE[0]}"`
 __DIR__=$(dirname "${__FILE__}")
 . $__DIR__/common.inc
 
@@ -11,7 +13,7 @@ do_download()
   info "Download $NAME [ ${C_RUN}${VERSION}${C_INFO} ] ..."
   cd_src
   #rtmpdump-2.3.tgz
-  if ! wget https://rtmpdump.mplayerhq.hu/download/rtmpdump-${VERSION}.tar.gz -O rtmpdump-${VERSION}.tgz; then
+  if ! wget https://rtmpdump.mplayerhq.hu/download/rtmpdump-${VERSION}.tgz -O rtmpdump-${VERSION}.tgz; then
     error "Failed to download $NAME"
   fi
   info "Download complete"

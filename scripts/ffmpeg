@@ -56,7 +56,9 @@ do_configure()
     --enable-libaom \
     --enable-libdav1d \
     --enable-libzvbi \
-    --enable-nonfree
+    --enable-nonfree \
+    --enable-demuxer=dash \
+    --enable-libxml2 \
   then
     error "Failed to configure $NAME"
   fi

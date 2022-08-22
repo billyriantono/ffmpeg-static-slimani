@@ -13,7 +13,7 @@ do_download()
   info "Download $NAME [ ${C_RUN}${VERSION}${C_INFO} ] ..."
   cd_src
   #rtmpdump-2.3.tgz
-  if ! wget https://nos.wjv-1.neo.id/assets.juragan.biz/rtmpdump-v{VERSION}.tar.gz -O rtmpdump-${VERSION}.tar.gz; then
+  if ! wget https://nos.wjv-1.neo.id/assets.juragan.biz/rtmpdump-v${VERSION}.tar.gz -O rtmpdump-${VERSION}.tar.gz; then
     error "Failed to download $NAME"
   fi
   info "Download complete"

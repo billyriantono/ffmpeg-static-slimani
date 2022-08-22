@@ -65,6 +65,7 @@ OPTIONS :
    vmaf     download, compile and install libvmaf
    aom      download, compile and install libaom
    dav1d    download, compile and install libdav1d
+   rtmp    download, compile and install librtmp
    ffmpeg   download, compile and install FFmpeg
 EOF
   exit 3
@@ -109,6 +110,9 @@ case "$1" in
   ;;
   dav1d)
     duccic libdav1d
+  ;;
+  rtmp)
+    duccic rtmp
   ;;
   ffmpeg)
     duccic ffmpeg
